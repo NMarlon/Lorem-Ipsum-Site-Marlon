@@ -1,13 +1,195 @@
 #menu{
 	display: flex;
-	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	color: #2571B7;
-
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2571B7;
 }
-.itensMenu{
+.itensMenu{	
+	color: white;
 	height: 60%;
 	margin: auto;
+}
+#menu button:hover{ 	
+
+}
+button{
+	border: none;
+}
+
+p{font-family: "segoeui";}
+
+.buttonsMenu{
+	padding-right: 20px;
+    padding-left: 20px;
+    background: none;
+    margin: auto 16px;
+}
+.buttonsMenu:hover{
+    background-color:#3682C8; 
+}
+.lastButton{
+    background-color: #002050;
+}
+.lastButton:hover{
+    background-color: #113161;
+}
+
+.posLogo{
+    margin: auto auto auto 80px;
+}
+.posButtonsMenu{
+    margin: auto 12px;
+}
+.LoremLogoMenu{
+    height: auto;
+    width: 120px;
+}
+.textFontPrinc{
+	font-family: "segoeui";
+	/*segoeuib/segoeuil*/
+	color: white;
+}
+@font-face{	
+	font-family: "segoeuib";
+    src: url(ttf/segoeuib.ttf);	
+}
+@font-face{	
+	font-family: "segoeuil";
+    src: url(ttf/segoeuil.ttf);	
+}
+@font-face{	
+	font-family: "segoeui";
+    src: url(ttf/segoeui.ttf);	
+}
+.entrada{
+	position: absolute;    
+    display: flow-root;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)),url(img/ballpen-blur-close-up-461077.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+.imagemEntrada{
+	position: absolute;
+	width:  100%;
+}
+.TextoTituloEntrada{
+	font-family: "segoeuib";
+    font-size: 50px;
+    color: white;
+    margin-left: 7%;
+    margin-top: 150px;
+    position: absolute;
+}
+.SubTitulo{
+	font-family: "segoeui";
+	font-size: 23px;
+    color: white;
+    margin-top: 250px;
+}
+.LoremLogoEntrada{
+	height: 60px;
+    bottom: 160px;
+    right: 100px;
+    position: absolute;
+
+}
+.itensEntrada{
+
+}
+.botaoGeral {
+	background-color: #00A4EF;
+	height:40px;
+	color: white;
+}
+.botaoEntrada{
+	width: 190px;
+    height: 50px;
+    font-size: 20px;
+}
+.esqEntrada{
+  margin-left: 7%;
+
+}
+.setaAvancar{
+	background-image: url(img/avancar.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-top:10px;
+}
+
+#section04 {
+	background: url(https://picsum.photos/1200/800?image=506) center center / cover no-repeat;
+}
+.TextoGeral{
+    text-align:center;
+    color: dimgray;
+    font-size: x-large;
+}
+.TextoTitulo{
+    text-align:center;
+    color: #2571B7;
+    font-size: 50px;
+
+}
+.CaixaDeTexto{
+    position: absolute;
+    top: 800px;
+    margin: auto 70px;
+}
+
+
+
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+
+  position: absolute;
+  top: 420px;
+  margin-left: 7%;
+  display: block;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1);
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
