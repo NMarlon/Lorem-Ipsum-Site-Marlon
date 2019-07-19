@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 #menu{
 	display: flex;
     padding: 10px;
@@ -192,4 +195,44 @@ p{font-family: "segoeui";}
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
   }
+}
+
+.alvosDivFundo{
+    display: flex;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+    margin-top: 1310px;
+}
+.TextoAlvos {
+    color: white;
+    font-size: 22px;
+    margin: auto; 
+}
+
+.alvosDiv1{
+    margin-right: 20px;
+}
+.AlvoImg{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 28px;
+}
+.divP{
+    display: -webkit-inline-box;
+    width: 70%;
+    margin: auto;
+    height: 80%;
+}
+}
+.divImg{
+    position: inherit;
+    width: 20%;
+    margin: auto;
+}
+.alvos{
+    display: flex;
+    padding: 23px;
 }
