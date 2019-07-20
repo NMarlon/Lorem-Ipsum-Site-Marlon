@@ -201,26 +201,25 @@ p{font-family: "segoeui";}
     margin-right: auto;
     margin-left: auto;
     height: 500px;
-    margin-top: 1310px;
+    margin-top: 150px;
 }
 .TextoAlvos {
     color: white;
-    font-size: 22px;
+    font-size: 15px;
     margin: auto; 
 }
 
-.alvosDiv1{
+.alvosDiv{
     margin-right: 20px;
 }
 .AlvoImg{
     display: block;
     margin-top: auto;
     margin-bottom: auto;
-    margin: 28px;
+    margin-right: 10px;
 }
 .divP{
     display: -webkit-inline-box;
-    width: 70%;
     margin: auto;
     height: 80%;
 }
@@ -232,7 +231,9 @@ p{font-family: "segoeui";}
 }
 .alvos{
     display: flex;
-    padding: 23px;
+    padding: 16px;
+    text-align: left;
+    margin: 15px;
 }
 
 .MenuPopUpResponsivo{
@@ -263,40 +264,62 @@ p{font-family: "segoeui";}
         bottom: -360px;
     }
     .posLogo {
-    margin: auto;
-}
+        margin: auto;        
+    }
+    .alvosDivFundo{
+        display: block;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 340px) {
- .itensEntrada{
-    margin-top: 45px;
-}
-.posLogo{
-    margin-left: 10px;
-}
-.LoremLogoMenu{ 
-display: none;
-}
-.LoremLogoEntrada{   
-    height: auto;
-    margin: 7%;
-    width: 85%;
-    right: initial;
-    bottom: -360px;
-    position: relative;
-    float: initial;
+    .itensEntrada{
+        margin-top: 45px;
+    }
+    .posLogo{
+        margin-left: 10px;
+    }
+    .LoremLogoMenu{ 
+        display: none;
+    }
+    .LoremLogoEntrada{   
+        height: auto;
+        margin: 7%;
+        width: 85%;
+        right: initial;
+        bottom: -360px;
+        position: relative;
+        float: initial;
+    }
+
+    .setaAvancar{
+        position: relative;
+        display: block;  
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        top: 70px;
+    }
+    .lastButton{
+        margin:auto;
+        margin-right: 5px;
+    }
+    .alvos{
+        display: block;
+        text-align: center;
+    }
+    .AlvoImg{
+        margin: auto;
+        font-size: 14px;
+    }
+    .alvosDiv{
+        display: contents;
+    }
 }
 
-.setaAvancar{
-    position: relative;
-    display: block;  
-    width: 70px;
-    height: 70px;
-    margin: auto;
-    top: 70px;
-}
-.lastButton{
-    margin:auto;
-    margin-right: 5px;
-}
+@media only screen and (max-width: 280px) {
+    .alvosDivFundo{
+        width: 100%;
+    }
+
 }
