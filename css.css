@@ -69,8 +69,8 @@ p{font-family: "segoeui";}
     src: url(ttf/segoeui.ttf);	
 }
 .entrada{
-	position: absolute;    
-    display: flow-root;
+	position: relative;    
+    display:inline-block;
     height: 100%;
     width: 100%;
     left: 0;
@@ -90,22 +90,23 @@ p{font-family: "segoeui";}
 	font-family: "segoeuib";
     font-size: 50px;
     color: white;
-    margin-left: 7%;
+    margin-left: 7%;    
     margin-top: 150px;
-    position: absolute;
+    position: relative;
 }
 .SubTitulo{
 	font-family: "segoeui";
 	font-size: 23px;
     color: white;
-    margin-top: 250px;
+    position: relative;
+    margin-top: -42px;
 }
 .LoremLogoEntrada{
-	height: 60px;
-    bottom: 160px;
-    right: 100px;
-    position: absolute;
-
+    height: 60px;
+    right: 40px;
+    bottom: -320px;
+    position: relative;
+    float: right;
 }
 .itensEntrada{
 
@@ -133,7 +134,7 @@ p{font-family: "segoeui";}
     width: 70px;
     height: 70px;
     display: block;
-    margin-top:10px;
+    margin-top:50px;
 }
 
 #section04 {
@@ -151,8 +152,8 @@ p{font-family: "segoeui";}
 
 }
 .CaixaDeTexto{
-    position: absolute;
-    top: 800px;
+    position: relative;
+    top: 120px;
     margin: auto 70px;
 }
 
@@ -163,11 +164,8 @@ p{font-family: "segoeui";}
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;
-
-  position: absolute;
-  top: 420px;
   margin-left: 7%;
-  display: block;
+  display: contents;
   -webkit-animation: bounce 2s infinite 2s;
   animation: bounce 2s infinite 2s;
   -webkit-transition: all .2s ease-in;
@@ -184,17 +182,17 @@ p{font-family: "segoeui";}
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
-  }
-  40% {
+}
+40% {
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
-  }
-  60% {
+}
+60% {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
-  }
+}
 }
 
 .alvosDivFundo{
@@ -235,4 +233,70 @@ p{font-family: "segoeui";}
 .alvos{
     display: flex;
     padding: 23px;
+}
+
+.MenuPopUpResponsivo{
+    background-image: url(img/menu.png);
+    left: 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    /* height: 100%; */
+    width: 60px;
+    display:none;
+
+}
+
+@media only screen and (max-width:860px) {
+    .hide{
+        display: none;
+    }
+    .MenuPopUpResponsivo{
+        display: initial;
+    }
+    .itensEntrada{
+        text-align: center;
+        width: 80%;
+    }
+    .LoremLogoEntrada{ 
+        bottom: -360px;
+    }
+    .posLogo {
+    margin: auto;
+}
+}
+
+@media only screen and (max-width: 340px) {
+ .itensEntrada{
+    margin-top: 45px;
+}
+.posLogo{
+    margin-left: 10px;
+}
+.LoremLogoMenu{ 
+display: none;
+}
+.LoremLogoEntrada{   
+    height: auto;
+    margin: 7%;
+    width: 85%;
+    right: initial;
+    bottom: -360px;
+    position: relative;
+    float: initial;
+}
+
+.setaAvancar{
+    position: relative;
+    display: block;  
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    top: 70px;
+}
+.lastButton{
+    margin:auto;
+    margin-right: 5px;
+}
 }
