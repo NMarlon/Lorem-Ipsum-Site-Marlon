@@ -1,6 +1,12 @@
 body{
     margin: 0;
 }
+h1{
+	text-align: center;
+    color: #2571B7;
+    font-size: 50px;
+    font-family: "segoeui";
+}
 #menu{
 	display: flex;
     padding: 10px;
@@ -237,24 +243,121 @@ p{font-family: "segoeui";}
 }
 
 .MenuPopUpResponsivo{
-    background-image: url(img/menu.png);
-    left: 0px;
+	
+	background-image: url(img/menu.png);
+	top: -26px;
+    left: -9px;
+    position: relative;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    /* height: 100%; */
-    width: 60px;
+    height: 50px;
+    width: 40px;
     display:none;
+}
+
+
+
+nav ul ul {
+    display: none;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {  
+    list-style: none;
+    padding: 0;
+}
+nav ul:after {
+    content: ""; clear: both; display: block;
+}
+
+nav ul li:hover {
+    background: #3682c8;
+    background: linear-gradient(top, #3682c8 0%, #2571B7 40%);
+    background: -moz-linear-gradient(top, #3682c8 0%, #2571B7 40%);
+    background: -webkit-linear-gradient(top, #3682c8 0%,#2571B7 40%);
+}
+nav ul li:hover a {
+    color: #fff;
+}
+
+nav ul li a {
+    display: block; padding: 15px 20px;
+    color: #757575; text-decoration: none;
+}
+
+nav ul ul {
+    background: #2571B7; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+nav ul ul li {
+    float: none; 
+    border-top: 1px solid #2571B7;
+    border-bottom: 1px solid #3682c8; position: relative;
+}
+nav ul ul li a {
+    padding: 15px 20px;
+    color: #fff;
+}   
+nav ul ul li a:hover {
+    background: #3682C8;
+}
+
+.CaixaDas3Imagens{
+	display: flex;
+    margin: auto;
+    width: 89%;
 
 }
+
+.Caixas3{
+    display: grid;    
+    padding: 18px;
+
+}
+.FundoCircular3Caixas{
+	border-radius: 50%;
+	display: flex;
+    margin: auto;
+    width: 150px;
+    height: 150px
+}
+.imgDas3Caixas{
+	margin: auto;
+    display: block;
+}
+.titulo3Caixas{
+    font-family: 'segoeui';
+    font-size: x-large;
+    font-weight: 900;
+}
+.textDas3Caixas{
+
+}
+.botao3Caixas{
+  	background: none;
+    border-style: solid;
+    border-width: 2px;
+    height: 45px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.marginAuto{
+    margin: auto;
+    margin-top: 30px;
+}
+
 
 @media only screen and (max-width:860px) {
     .hide{
         display: none;
     }
     .MenuPopUpResponsivo{
-        display: initial;
+        display: block;
     }
     .itensEntrada{
         text-align: center;
@@ -267,11 +370,14 @@ p{font-family: "segoeui";}
         margin: auto;        
     }
     .alvosDivFundo{
-        display: block;
+        display: table;
         font-size: 12px;
     }
     .CaixaDeTexto{
         margin: auto 25px;
+    }
+    .CaixaDas3Imagens{
+        display: block;
     }
 }
 
@@ -321,53 +427,6 @@ p{font-family: "segoeui";}
 }
 
 @media only screen and (max-width: 280px) {
-   
+
 
 }
-
-nav ul ul {
-    display: none;
-}
-nav ul li:hover > ul {
-    display: block;
-}
-
-nav ul {  
-    list-style: none;
- padding: 0;
-}
-    nav ul:after {
-        content: ""; clear: both; display: block;
-    }
-
-        nav ul li:hover {
-            background: #4b545f;
-            background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-            background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-            background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
-        }
-            nav ul li:hover a {
-                color: #fff;
-            }
-        
-        nav ul li a {
-            display: block; padding: 15px 20px;
-            color: #757575; text-decoration: none;
-        }
-
-nav ul ul {
-        background: #5f6975; border-radius: 0px; padding: 0;
-        position: absolute; top: 100%;
-    }
-        nav ul ul li {
-            float: none; 
-            border-top: 1px solid #6b727c;
-            border-bottom: 1px solid #575f6a; position: relative;
-        }
-            nav ul ul li a {
-                padding: 15px 20px;
-                color: #fff;
-            }   
-                nav ul ul li a:hover {
-                    background: #4b545f;
-                }
