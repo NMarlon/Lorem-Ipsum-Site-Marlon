@@ -615,6 +615,9 @@ input[type=text]:focus, textarea:focus {
     .TextoAlvos{
     	margin-left: auto;
     }
+    .titulo3Caixas{
+        text-align: center;
+    }
     .alvos{
         display: block;
         text-align: center;
