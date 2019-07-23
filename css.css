@@ -4,8 +4,11 @@ body{
 h1{
 	text-align: center;
     color: #2571B7;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "segoeui";
+}
+button{
+    cursor: pointer;
 }
 #menu{
 	display: flex;
@@ -32,6 +35,14 @@ button{
 p{font-family: "segoeui";}
 
 .buttonsMenu{
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -o-transition:background-color 0.4s;
+    -moz-transition:background-color 0.4s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
 	padding-right: 20px;
     padding-left: 20px;
     background: none;
@@ -127,6 +138,9 @@ p{font-family: "segoeui";}
     height: 50px;
     font-size: 20px;
 }
+.botaoGeral:hover{
+    background-color: #11B5FF;
+}
 .esqEntrada{
   margin-left: 7%;
 
@@ -212,7 +226,8 @@ p{font-family: "segoeui";}
 .TextoAlvos {
     color: white;
     font-size: 15px;
-    margin: auto; 
+    margin: auto;     
+    margin-left: 20px;
 }
 
 .alvosDiv{
@@ -229,7 +244,7 @@ p{font-family: "segoeui";}
     margin: auto;
     height: 80%;
 }
-}
+
 .divImg{
     position: inherit;
     width: 20%;
@@ -274,12 +289,6 @@ nav ul:after {
     content: ""; clear: both; display: block;
 }
 
-nav ul li:hover {
-    background: #3682c8;
-    background: linear-gradient(top, #3682c8 0%, #2571B7 40%);
-    background: -moz-linear-gradient(top, #3682c8 0%, #2571B7 40%);
-    background: -webkit-linear-gradient(top, #3682c8 0%,#2571B7 40%);
-}
 nav ul li:hover a {
     color: #fff;
 }
@@ -290,6 +299,7 @@ nav ul li a {
 }
 
 nav ul ul {
+    left: 0;
     background: #2571B7; border-radius: 0px; padding: 0;
     position: absolute; top: 100%;
 }
@@ -309,21 +319,20 @@ nav ul ul li a:hover {
 .CaixaDas3Imagens{
 	display: flex;
     margin: auto;
-    width: 89%;
 
 }
 
 .Caixas3{
     display: grid;    
     padding: 18px;
-
 }
 .FundoCircular3Caixas{
 	border-radius: 50%;
 	display: flex;
     margin: auto;
     width: 150px;
-    height: 150px
+    height: 150px;
+
 }
 .imgDas3Caixas{
 	margin: auto;
@@ -334,25 +343,164 @@ nav ul ul li a:hover {
     font-size: x-large;
     font-weight: 900;
 }
+.barra3Cx{/*Ref 01- Verificar, limpar do Html*/
+
+}
+
 .textDas3Caixas{
+
 
 }
 .botao3Caixas{
-  	background: none;
-    border-style: solid;
-    border-width: 2px;
-    height: 45px;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
+ background: none;
+ border-style: solid;
+ border-width: 2px;
+ height: 45px;
+ width: 80%;
+ margin: auto;
+ margin-top: 30px;
 }
 .marginAuto{
     margin: auto;
     margin-top: 30px;
 }
 
+.AjusteResp3CxImg{
+    display:  contents;
+}
+.AjusteResponsivo3CaixasTexto{
+    display: grid;
+}
+.BarraPC{
+    display: block;
+}
 
-@media only screen and (max-width:860px) {
+.barraResp{
+    display: none;
+}
+
+.Quadros4{
+    display: flex;
+
+}
+.quadro{
+    display: block;
+    width: 25%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gainsboro;
+    padding: 25px;
+    margin: auto;
+}
+
+.TituloQuadro{
+    color: #f25022;
+    font-weight: bold;
+    margin: auto;
+    width: fit-content;
+    font-size: medium;
+}
+.textoQuadro{
+    font-size: small;
+}
+
+.divPromocao{
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/achievement-adult-agreement-1391373.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+}
+
+.textPromocao{
+    margin: auto;
+    display: block;  
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.Subscribe{
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;   
+    background-color: gainsboro;
+    padding: 20px;
+}
+.caixadeSubscribe{
+
+}
+.tituloSub{
+    transition: color 0.8s;
+    color: gray;
+}
+.subInput{
+    width: 100%;
+    margin: auto;
+    display: block;
+    border: none;
+    height: 40px;
+    font-size: 30px;
+    color: #777;
+    font-family: 'segoeui';
+}
+ .subInput:focus #tituloSub1{
+    color: blue;
+}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+.btSub{
+    transition: background-color 0.3s;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+
+}
+.divLogoFinal{
+    display: flex;
+    width: fit-content;
+    margin: 0px auto;
+}
+.separadorLgFn{/*Separador Logo Final*/
+    display: flex;
+    margin:30px;
+}
+
+.logoFinalImg{
+
+}
+.logoFinalTexto{
+    display: block;
+    margin: auto;
+}
+
+.caixadeSubscribe:focus-within > .tituloSub{
+  color: #3279BA;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:860px) {/*Parte Responsiva*/
     .hide{
         display: none;
     }
@@ -373,14 +521,65 @@ nav ul ul li a:hover {
         display: table;
         font-size: 12px;
     }
+    .Caixas3{
+        display: flex;
+    }
     .CaixaDeTexto{
         margin: auto 25px;
     }
+    .AjusteResponsivo3CaixasTexto{
+        display: initial;
+        padding: initial;
+        order: -1;
+    }
     .CaixaDas3Imagens{
         display: block;
+        margin: inherit;
     }
+    .FundoCircular3Caixas{
+
+    }
+    .AjusteResp3CxImg{
+        display: flex;        
+        padding: 7px;
+    }
+
+    .TextoResp3Cx{
+        text-align:left; 
+    }
+    .BarraPC{        
+        display: none;
+    }
+    .barraResp{
+        display: block;
+        width: -webkit-fill-available;
+        height: 7px;
+    }
+    .Quadros4{
+        display: grid;
+    }
+    .quadro{
+        width: 80%;
+
+    }
+
+
 }
 
+@media only screen and (max-width:600px) {
+    .Subscribe{
+        width: auto;
+    }
+    .spLgFn2{
+        display: none;
+    }
+    .logoFinalImg {
+        height: 28px;
+    }
+    .logoFinalTexto{
+        height: 28px;
+    }
+}
 @media only screen and (max-width: 340px) {
     .itensEntrada{
         margin-top: 45px;
@@ -400,7 +599,7 @@ nav ul ul li a:hover {
         position: relative;
         float: initial;
     }
-
+ 
     .setaAvancar{
         position: relative;
         display: block;  
@@ -413,6 +612,9 @@ nav ul ul li a:hover {
         margin:auto;
         margin-right: 5px;
     }
+    .TextoAlvos{
+    	margin-left: auto;
+    }
     .alvos{
         display: block;
         text-align: center;
@@ -423,6 +625,29 @@ nav ul ul li a:hover {
     }
     .alvosDiv{
         display: contents;
+    }
+    .divImg{
+    	width: initial;
+    }
+    .Caixas3{
+        display: grid;
+
+    }
+    .AjusteResponsivo3CaixasTexto{
+        display: grid;
+        order: 0;
+    }
+    .TextoResp3Cx{
+        text-align: center;
+    }
+    .TextoGeral{
+        font-size: larger;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .textPromocao{
+        font-size: large;
     }
 }
 
